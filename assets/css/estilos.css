@@ -1,0 +1,465 @@
+/*--------------------------------------------------------------------------------------------
+  Site: Faculdade Sumaré | Autor: Fabio | Criacao: 29/06/2011 | Última Atualizaçao:23/07/2012 
+----------------------------------------------------------------------------------------------*/
+
+/*Configuracoes Gerais*/
+
+
+/*LAYER - LAYOUT*/
+#header{ background-image:url(/imagens/bg_header.gif); background-repeat:repeat-x; background-position:top;text-align:center; }
+#header form{ float:left;}
+	form#login{ height:56px;}
+	form#login
+	form#busca{ height:56px;}
+	img#logotipo{ margin:32px 0px 0px 34px; float:left;}
+	ul#menuPrincipal{ float:right; margin:50px 50px 0px 0px;}
+	#menuExpansivo{background-color:#FFF; background-image:url(/imagens/bg_menuExpandido.jpg); background-repeat:repeat-x; background-position:top; margin:0px; padding:20px; display:none;  }
+	
+/*	#inputBusca{background-image: url(/site/imagens/borda_inputBusca.jpg); background-repeat: no-repeat; background-color: white; background-position: left; height: 30px; width: 158px; float: left;}	
+*/	
+	#expandeMenu{ width:965px; height:24px; background-image:url(/imagens/bg_btExpansivo.jpg); background-repeat:no-repeat;}
+	div.midiasSociais{ margin:0px; padding:0px; clear:both;}
+		
+#mainContent{ padding:20px 0px; text-align:center; clear:both; }
+#footer{ margin:20px 0px 0px 0px;text-align:center; width: 986px; margin: 0 auto;}
+#footer div.container div.colunaFoot{ margin:0px; padding:20px 0px 10px 10px; float:left; }
+#footer div.container div.colunaFoot div.itemSite { margin:0px; padding:10px 0px; border:0px; float:none;}
+
+#contatoFotter{ width:280px; padding:0px 10px 0px 0px; float:right;  }
+#contatoFotter, #contatoFotter p { font-size:11px; text-align:right;color:#7a8387;}
+#contatoFotter, #contatoFotter p span{ font-size:18px; font-weight:bold; text-align:right;color:#7a8387;}
+
+#rsFooter{ text-align:right; margin:25px 0px 0px 0px; padding:0px 0px 15px 0px; border-bottom:1px solid #8ba6b0; }
+
+#copyRight{ width:100%; height:74px; background-color:#0085b6; color:#fff; text-align:center;}
+
+/*OUTRAS CLASSES*/
+div.container{width:962px; margin:0px auto; text-align:left;}
+.clear{ clear:both}
+.left{ float:left;}
+.right{ float:right;}
+.borderRadius{border:0px; -moz-border-radius:11px; -webkit-border-radius:5px; border-radius:5px; behavior:url(imagens/border-radius.htc);}
+.diaTeste{margin-right:1px; background:red;}
+
+
+/*ÁREA LOGIN*/
+form#busca input{ float:left;}
+#inputBusca{width:130px; height:28px !important; background-color:#FFF !important; background-image:url(/imagens/bg_campoBusca.png); background-repeat:no-repeat; background-position:left center; color:#0085b6; float:left !important; color:#0E8DBB !important; font-size:10px !important; margin:0px !important;*margin:5px 0px 0px 0px !important; padding:0px 0px 0px 10px !important; *padding:5px 0px 0px 10px !important;}	
+#btnBusca{width:36px !important; height:28px !important; float:left !important; background-image:url(/site/imagens/btnBusca.jpg) !important; cursor:pointer; margin:0px !important;*margin:5px 0px 0px 0px !important; *padding:0px !important;}
+
+#header div.container *{color:#fff;}
+	form#login table{ margin:0px; padding:0px;}
+	form#login table td{ margin:0px; padding:10px 0px 0px 0px;}
+	form#login h1{ font-size:12px; font-weight:bold; text-transform:uppercase; text-align:center; padding:0px;}
+	form#login img{ float:left; margin:4px 7px 0px 5px; }
+	
+	form#login input{ width:107px; height:23px;*height:30px; background:transparent; border:0px; background-image:url(/imagens/bg_campoLogin.png); background-repeat:no-repeat; background-position:left center; margin:0px; padding:4px 0px 4px 5px;*padding:10px 0px 4px 5px; font-size:11px; color:#fff; vertical-align:middle;}
+	form#login input.check{ width:10px; height:10px; background-image:transparent; border:0px; margin:2px 5px 0px 4px; padding:0px; float:left;}
+	form#login input#loginButton{ width:30px; height:30px; background-image:url(/imagens/bt_okLogin.jpg); background-repeat:no-repeat; background-position:center center; padding:0px 20px 0px 4px; color:#0085b6; cursor:pointer;}
+	
+	form#busca table{ margin:0px; padding:0px;}
+	form#busca table td{ padding:5px 0px 0px 0px;}
+	form#busca table td input{ margin:0px; padding:0px; }
+	form#busca table td input#inputBusca{ }
+	form#busca #telTop{ border-left:1px solid #2598c1; margin:0px 0px 0px 10px; padding:5px 0px 5px 30px; float:right;}
+
+/*TEMPLATE HOME*/
+#contentHome{ width:715px; float:left;}
+#bannerSlider{height:237px; background-image:url(/imagens/bg_bannerSlider.png); background-position:center bottom; background-repeat:no-repeat; padding:0px 0px 35px 0px; overflow:hidden; }
+#leftList{ width:180px;_width:170px; padding:20px 0px; float:left;}
+#contentCentral{ width:493px;*width:513px;_width:490px;_margin:20px 0px; padding:0px 20px;*padding:0px 6px 0px 15px;_padding:0px 0px 0px 10px; float:left; text-align:left; border-left:1px solid #d3e4ea;}
+	
+	.resumoNoticias{ *height:100px; margin:0px; padding:0px 0px 25px 0px;}
+		.imgNoticiasHome{ float:left; margin:0px; padding:}
+		.textNoticiasHome{ width:380px;_width:370px; margin:0px; padding:; float:right;}
+		.textNoticiasHome a{ float:left; clear:both;}
+		.lnkMais{text-decoration:none; color:#848484; width:100%; float:left; text-align:center;}
+		/*v2*/
+		.dataNoticiasHome{ width:52px;}
+		.dataNoticiasHome p{ background:#edf1f4; padding:2px 6px; color:#7A8387;}
+		.dataNoticiasHome p.first{ color:#0085B6; font-weight:bold; background:#c2d1d8; padding:2px 5px;}
+		.textNoticiasHome{ border-left:1px solid #edf1f4; border-bottom:1px solid #edf1f4; width:430px; padding-left:10px; padding-bottom:5px;}
+#colRightHome{ width:240px;*width:235px; float:right; padding:0px 0px 0px 5px;_padding:0px 0px 0px 0px;}
+	#twitter{}
+	#twitter #tweet{ margin-top: -20px; }
+	#twitter #tweet .tweetLink{ color:gray; text-decoration:underline; }
+	#twitter #tweet .tweetLink:hover{ color:#3885b6; }
+	#twitter #tweet .tweetLink:visited{ color:gray; }
+.bannerLateral img { margin:0px 0px 5px 0px;}
+.detailVest{ background-image:url(/imagens/bg_bannervestibAzul.png); background-position:bottom; background-repeat:no-repeat; padding:0px 0px 11px 0px; }
+
+#blocoPrincipal{ width:524px; background-image:url(/imagens/bg_blocoPrincipal.jpg); background-repeat:no-repeat; background-position:center top; margin:0px 0px 0px -10px; font-size:12px; font-weight:normal; color:#7a8387;}
+	#nesHome{ width:237px;_width:220px; margin:0px 20px 0px 10px; float:left; }
+	#videosHome{width:254px; float:left;}
+div#twitter{ _width:235px !important;_overflow:hidden; background-image:url(/imagens/bg_twitterHome.jpg); background-position:top; background-repeat:no-repeat;color:#848484; margin:10px auto 0px auto; padding:10px 0px 0px 0px;}
+div#twitter #tweet{ padding:0px 0px 10px 0px; border-top:1px solid #DCE4E7;}
+
+/*TEMPLATES INTERNOS*/
+#imgTop{ background-image:url(/imagens/bg_bannerSlider.png); background-position:center bottom; background-repeat:no-repeat; padding:0px 0px 35px 0px;}
+div.tplSimples #imgTop{ background:none; margin:0px; padding:0px;}
+
+div.navLateral{ width:282px;}
+div.descCursos div.navLateral{ width:257px;}
+
+div.conteudoPrincipal{ width:650px; min-height:300px; margin:0px 0px 0px; padding:0px 0px 0px 28px; border-left:1px solid #ccc; clear:right;}
+	div.cabecalhoMateria{ width:100%; margin:0px 0px 20px 0px; clear:both;}
+	div.corpoMateria{ width:100%; clear:both;}
+	div.rodapeMateria{ width:100%; margin:20px 0px 20px 0px;clear:both;}
+div.corpoMateria a{color:#0085b6;}
+
+div.tplSimples div.conteudoPrincipal{ width:100%; margin:0px auto; padding:0px; border:0px; /*margin:0px 0px 0px 20px;*/}
+	div.tplSimples div.conteudoPrincipal div.cabecalhoMateria{ width:100%; margin:0px 0px 20px 0px; clear:both;}
+	div.tplSimples div.conteudoPrincipal div.corpoMateria{ width:98%; clear:both;}
+	div.tplSimples div.conteudoPrincipal div.rodapeMateria{ width:100%; margin:20px 0px 20px 0px;clear:both;}
+
+div.tplNews{ width:95%; margin:20px auto;}
+div.tplNews div.newsList{ margin:0px  0px 20px 0px; }
+div.tplNews div.newsList div.dataNews{ width:132px; float:left; background-color:#c5d2d7; padding:10px; text-align:center; color:#0085b6; }
+div.tplNews div.newsList div.dataNews h4{ font-size:30px; color:#0085b6; float:left; text-transform:uppercase; }
+div.tplNews div.newsList div.dataNews div{ font-size:14px; color:#0085b6; float:right; line-height:15px; margin:5px 10px 0px 0px; }
+div.tplNews div.newsList div.dataNews div .data{  }
+div.tplNews div.newsList div.dataNews div .mes{ margin-left:-5px; }
+div.tplNews div.newsList div.dataNews div .ano{  }
+
+div.tplNews div.newsList div.resumoNews{width:740px;float:right; border-left:1px solid #c5d2d7;border-bottom:1px solid #c5d2d7; padding:10px 0px 30px 20px;}
+div.tplNews div.newsList div.resumoNews h2 a{ color:#0085B6;}
+div.tplNews div.newsList div.resumoNews a{ color:#7A8387;}
+
+div.tplvideos{ width:100%; margin:20px auto; font-size:13px; font-weight:normal !important; color:#7A8387;}
+div.tplvideos table#vdeosList{ margin:0px; text-align:center; }
+div.tplvideos table#vdeosList td{ text-align:left; border:1px solid #c5d2d7; padding:20px; }
+
+div.tplvideos table#vdeosList td a img{ padding:5px 0px 0px 0px;}
+
+div.tplvideos table#vdeosList td h2, div.tplvideos table#vdeosList td h2 a{ width:80%;font-size:18px; color:#0085b6; margin:0px  0px 10px 0px; }
+div.tplvideos table#vdeosList td h4, div.tplvideos table#vdeosList td h4 a{font-size:13px; font-weight:normal !important;color:#7A8387; margin:0px  0px 20px 0px; }
+
+div.descCursos div.conteudoPrincipal{ width:675px; margin:20px 0px 0px; padding:0px 28px 0px 0px; border-left:0px; border-right:1px solid #c5d2d7; clear:left;}
+	div.descCursos div.conteudoPrincipal div.cabecalhoMateria{ width:100%; margin:0px 0px 20px 0px; clear:both;}
+	div.descCursos div.conteudoPrincipal div.corpoMateria{ width:100%; clear:both;}
+	div.descCursos div.conteudoPrincipal div.rodapeMateria{ width:100%; margin:20px 0px 20px 0px;clear:both;}
+
+div.imgLateral{ width:240px; margin:20px 0px 0px 10px; text-align:center;}
+div.imgLateral a img{ margin:20px 0px 20px 0px;}
+
+div.btsCompart{ width:100%; height:20px;}
+/*div#topTit{ height:85px; background-color:#0085b6; padding:0px;}*/
+div#topTit{ height:85px; background-color:#0085b6; background-image:url(/imagens/img_topo_padrao.jpg); background-repeat:no-repeat; background-position:left top; padding:0px;}
+
+div#topTit.topContato{ background-image:url(/imagens/img_contato.jpg);}
+
+div#topTit h1{ font-size:22px; text-transform:uppercase; padding:30px 0px 0px 30px; color:#fff;}
+div#topTit a{ float:right; font-size:11px; font-weight: bold; text-decoration:none; text-transform:uppercase; padding:35px 30px 0px 0px; color:#ecb900;}
+
+div.chamadasLaterais{ padding:0px 0px 20px 20px;border-bottom:1px solid #c5d2d7;}
+div.chamadasLaterais:last-child{ padding:0px 0px 20px 20px;border-bottom:0px;}
+
+div.apresentaCurso{ width:100%; float:left; margin:0px 0px 20px 0px; padding:20px 0px; border-bottom:1px solid #c5d2d7;}
+div.apresentaCurso div.videoCurso{ width:340px; float:left;}
+div.amplia{ width:100%; background-color:#E5F3F8; min-height:33px; background-image:url(/imagens/bg_clicarAmplia.jpg); background-repeat:no-repeat; background-position:left top; margin:10px 0px 0px 0px;}
+div.amplicarAp{ min-height:33px; background-image:url(/imagens/bg_clicarAmpliar.jpg); background-repeat:no-repeat; background-position:right top; margin:0px 0px 0px 0px;}
+div#gradeCurso{padding:10px; width:640px; margin:0px auto; display:none;}
+div.funcionamentoBibliotecas{ margin:0px 0px 40px 0px;}
+
+/*NAVEGAÇÃO*/
+ul#menuPrincipal li{ float:left; margin:0px 15px; }
+ul#menuPrincipal li a{ font-size:14px; text-decoration:none; text-transform:uppercase; color:#a5b7be !important;}
+ul#menuPrincipal li a:hover{ color:#0085b6 !important;}
+
+#menuExpansivo ul.itemSite { min-height:120px; border-right:1px solid #d3e4ea; margin:0px 0px 20px 0px; padding:20px 30px; float:left;}
+#contentListaMenu ul:last-child{border-right:0px solid #d3e4ea;}
+
+#menuExpansivo ul.itemSite li {list-style:none; line-height:15px;}
+#menuExpansivo ul.itemSite li a{font-size:11px; text-decoration:none; font-weight:bold; color:#0e88b5;}
+
+#footer div.container div.itemSite ul{ width:150px; min-height:130px;*height:130px;  margin:0px; padding:0px 0px 10px 0px;}
+#footer div.container div.itemSite ul li { list-style:none; line-height:15px;}
+#footer div.container div.itemSite ul li a{ font-size:11px; display:block;*display:inline-block; color:#7a8387; text-decoration:none; padding:0px 7px;}
+#footer div.container div.itemSite ul li:hover a{ background-color:red; color:#fff;}
+
+div.midiasSociais ul li{ list-style:none; float:left; margin:0px 10px 0px 0px;}
+
+#expandeMenu a{ float:right; font-size:10px; text-transform:uppercase;text-decoration:none; color:#ecb900 !important; margin:0px 20px 0px 0px; }
+#expandeMenu button{ background:none; border:0px;float:right; font-size:10px; text-transform:uppercase;text-decoration:none; color:#ecb900; margin:0px 20px 0px 0px; cursor:pointer; }
+
+#leftList ul{ width:157px; margin:10px 0px 20px 0px;}
+#leftList ul li{ list-style:none; line-height:1.5em; margin:0px; padding:0px;}
+#leftList ul li a{display:block;*display:inline-block; font-size:13px; color:#7a8387; text-decoration:none; margin:0px; padding:0px 7px; }
+#leftList ul li:hover a{ background-color:#0085b6; color:#fff;}
+
+ul#navInst, ul#navCursos, ul#navUnidadePricipal { border-bottom:1px solid #ccc; margin:0px; padding:0px 0px 20px 0px;}
+ul#navInst li, ul#navCursos li, ul#navUnidadePricipal li{ background-image:url(../imagens/bg_bannervestibAzul.png); background-position:bottom; background-repeat:no-repeat; list-style:none; margin:0px; padding:0px 0px 11px 0px; text-transform: uppercase; position:relative;}
+ul#navInst li a, ul#navCursos li a, ul#navUnidadePricipal li a{ width:251px;*width:291px; display:block;*display:inline-block; font-size:13px; font-weight:bold; text-decoration:none; color:#888; padding:2px 20px;*padding:2px 0px 2px 20px; margin-right:-45px; position:relative;}
+ul#navInst li:hover a, ul#navCursos li:hover a, ul#navUnidadePricipal li:hover a{ background-image:url(../imagens/bg_itemList.jpg); background-position:left center; background-repeat:no-repeat; padding:2px 20px; color:#fff;}
+
+ul#navUnidades{ margin:5px 30px 20px 0px; padding:0px; }
+ul#navUnidades li{ list-style:none; border-bottom:1px solid #ccc; margin:0px; padding:0px; }
+ul#navUnidades li:first-child{ list-style:none; border-top:1px solid #ccc; margin:0px; }
+ul#navUnidades li a{display:block; font-weight:bold; text-decoration:none; color:#7a8387; margin:2px 0px; padding:2px 10px; }
+ul#navUnidades li:hover a{ background-color:#42a5c9; color:#fff; }
+
+div.tplSimples div#sbonus{ border-top:1px solid #ccc; border-bottom:1px solid #ccc; margin:20px 0px; padding:20px 0px 20px 0px;}
+div.tplSimples div#sbonus ul{text-align:center;}
+div.tplSimples div#sbonus ul li{ list-style:none; *float:left; display:inline-block;}
+div.tplSimples div#sbonus ul li:hover{ background-image:url(/imagens/bg_navBonus.jpg); background-repeat:repeat-x; background-position:top;}
+div.tplSimples div#sbonus ul li a{ font-size:20px; color:#0085b6; display:block; font-weight:bold; margin:0px 10px; padding:8px 20px 25px 20px; text-transform:uppercase; text-decoration:none;}
+div.tplSimples div#sbonus ul li:hover a{ background-image:url(/imagens/bg_navBonusDetalhe.jpg); background-repeat:no-repeat; background-position:center top; color:#fff; }
+
+ul.navContato{ border-bottom:1px solid #ccc; margin:0px 0px 20px; padding:0px 0px 0px 70px;}
+ul.navContato li{ display:inline;float:left; list-style:none;margin:0px 10px; padding:8px 20px 8px 20px;}
+ul.navContato li:hover{ background-color:#0085b6;}
+ul.navContato li a{ font-size:20px; color:#0085b6; display:block; font-weight:bold; text-transform:uppercase; text-decoration:none;}
+ul.navContato li:hover a{ color:#fff; }
+ul.linksPrincipais{ margin:20px 0px 20px 0px; padding:0px; }
+ul.linksPrincipais li{ width:230px; height:56px; list-style:none; background-image:url(/imagens/bg_itemListRight.jpg); background-position:right top; margin:0px 0px 1px -10px; padding:0px 0px 0px 16px; }
+ul.linksPrincipais li:hover{ background-image:url(/imagens/bg_itemListRightAc.jpg); }
+ul.linksPrincipais li a{ display:block; font-weight:bold; text-decoration:none; color:#0487b7; text-transform:uppercase; margin:0px; padding:16px 0px;}
+ul.linksPrincipais li:hover a{display:block; font-weight:bold; color:#fff;}
+
+div.alignbuttonFree{ text-align:center; margin:40px 0px;}
+	a.btLivre{ background-image:url(/imagens/bg_btAzul.gif); background-repeat:no-repeat; background-position: center right; padding:6px 40px 8px 30px; color:#fff; font-size:16px; font-weight:bold; text-decoration:none; text-transform:uppercase; text-align:center;}
+
+/*LISTAS*/
+div.conteudoPrincipal ul{ margin:0px 0px 30px 0px; /*width:200px;*/}
+div.conteudoPrincipal ul li, .listaBasica{ background-image:url(/imagens/bullet.jpg); background-position:left top; background-repeat:no-repeat; list-style:none; color:#7A8387; padding:0px 0px 0px 15px;}
+.listaBasica a{color:#7A8387 !important; font-size:13px;}
+.listaBasica a:hover{color:#0085B6 !important;}
+div.conteudoPrincipal ol li{ color:#7A8387; padding:0px 0px 10px 15px;}
+
+div.conteudoPrincipal ul li a{ text-decoration:none; color:#7A8387;}
+div.conteudoPrincipal ul li a:hover{ text-decoration:none; color:#0085b6;}
+
+#nesHome ul{ margin:20px 0px;}
+#nesHome ul li{ margin:0px 0px 3px 0px; padding:10px 10px; background-image:url(/imagens/bg_listNesHome.gif); list-style:none;}
+#nesHome ul li ul{ float:right; margin:0px; padding:5px;}
+#nesHome ul li li{ display:inline; margin:0px; padding:0px;}
+
+#videosHome ul{ margin:10px 0px 0px 0px;}
+#videosHome ul li{ border-top:1px solid #ccc; display:block; padding:10px 0px; list-style:none; clear:both;}
+#videosHome ul li img{ margin:0px 10px 0px 0px; list-style:none; float:left;}
+#videosHome ul li h4{ font-size:13px; padding-top:10px;*padding-top:0px; color:#0085b6;}
+
+#contatoFotter #rsFooter ul{ float:right; text-align:left; list-style:none; margin:5px 0px 0px 0px;}
+#contatoFotter #rsFooter ul li{ float:left; text-align:left !important; margin:0px 0px 0px 10px; list-style:none;}
+#contatoFotter #rsFooter ul li a{ text-decoration:none;}
+
+ul.fontAjust{ float:right; margin:15px 0px 0px 0px; padding:0px;}
+ul.fontAjust li{ background:none !important; list-style:none !important; float:left; margin:0px -7px; }
+ul.fontAjust li a{ display:block !important;}
+
+div.cabecalhoMateria ul.fontAjust{margin:3px 0px 0px 0px;}
+
+ul.listCursos{ width:588px; margin:0px 20px !important;}
+ul.listCursos li{display:block !important;background-image:url(/imagens/bg_optCursosInativo.jpg) !important; background-repeat:no-repeat; background-position:left top !important;  margin:0px 0px 3px 0px !important; padding:18px 20px !important;}
+ul.listCursos li a{display:block !important; text-decoration:none; font-size:18px; font-weight:bold; color:#0085b6 !important; text-transform:uppercase !important;}
+ul.listCursos li:hover {background-image:url(/imagens/bg_optCursos.jpg) !important; }
+ul.listCursos li:hover a{ color:#fff !important;}
+
+div.unidades{ width:250px; text-align:left;}
+div.unidades span{ font-size:12px; text-transform: uppercase; float:right; background-color:#ecb900; color:#fff; font-weight:bold; padding:2px 15px; }
+div.unidades h2, div.unidades h2 a{ font-size:15px; text-decoration:none; text-transform:uppercase; color:#0085b6; margin:2px 0px 10px 0px;}
+div.unidades img{ margin:0px 0px 10px 0px; }
+div.unidades p{ font-size:13px; color:#7a8387; text-align:left;}
+div.unidades p span{ background:transparent !important;color:#8ba6b0 !important; font-style:italic !important; font-weight:normal !important; margin:10px 0px 0px 0px !important; padding:0px !important; float:right !important;}
+
+div.apresentaCurso ul{ width:280px; float:right; margin:0px 10px 0px 0px;}
+div.apresentaCurso ul li{ background:none; font-size:18px; font-weight:bold; margin:0px; padding:10px 10px 10px 0px;*padding:0px 10px 10px 0px; border-bottom:1px solid #ccc;}
+div.apresentaCurso ul li:last-child{border-bottom:0px;}
+div.apresentaCurso ul li span{ font-size:12px; font-weight:normal;}
+
+ul.newsPaging{ margin:0; padding:0; }
+	ul.newsPaging li{ list-style:none; float:right; margin:0; padding:5px 10px;}
+	ul.newsPaging li a{ text-decoration:none; color:#0085B6;}
+	ul.newsPaging li.active a{ font-weight:bold;}
+	ul.newsPaging li.active{ background:#C5D2D7;}
+
+/*TABELAS*/
+
+table.stltable{ width:100%; margin:20px 0px; border:1px solid #ccc;}
+table.stltable th{background-color:#f4f6f7; border:1px solid #ccc; border-collapse:collapse; height:50px;  padding:0px 10px;}
+table.stltable th {font-size:1.2em; font-weight:bold; text-transform: uppercase; color:#0487b7;}
+
+table.stltable td{ font-size:14px; font-weight:normal; color:#7A8387; padding:3px 10px;}
+
+table.stltable tr:nth-child(odd){background-color:#f9fafb;}
+
+table.stltable th h3{ font-size:16px; font-weight:normal; color:#666; text-align:center;}
+table.stltable th h3 span{ font-size:12px; font-weight:normal;}
+table.stltable th p{ font-size:12px; font-weight:normal; color:#b1c1c7; text-align:center;}
+p.msgCompararCursos{ font-size:14px; font-weight:normal; color:#0085b6; text-align:center; margin:20px 0px 0px 0px;}
+
+
+table.stltable p.yellow{ text-align:center;}
+
+table.stltable td select{ background-color:#fff; width:160px; font-size:12px; font-weight:normal; border:1px solid #e0eef4; color:#000; text-align:left; padding:2px;}
+table.stltable td ul{ font-size:12px; font-weight:normal; color:#b1c1c7; text-align:left;}
+table.stltable td ul li{ list-style:none; line-height:18px;}
+table.stltable td ul li a{ text-decoration: underline; color:#b1c1c7;}
+
+
+
+
+table.stltableGrade{ width:100%; margin:20px auto;}
+table.stltableGrade td{background-color:#f4f6f7; border:1px solid #e0eef4; border-collapse:collapse; padding:5px;}
+
+
+
+table#listUnidades{ width:100%; margin:30px 0px 0px 0px; padding:0px 0px 0px 40px;*padding:0px 0px 0px 25px;}
+table#listUnidades td{ padding:0px 0px 40px 0px; text-align:center !important; border:0;}
+
+table#compareCursos{ margin:20px 0px;}
+table#compareCursos th{ background-color:#f4f6f7; border:1px solid #e0eef4; padding:10px 20px; }
+table#compareCursos tr:nth-child(2n+1) th{background-color:#f9fafb;}
+table#compareCursos th label{ font-size:14px; font-weight:bold; text-transform: uppercase; color:#0487b7; margin:20px 0px;}
+table#compareCursos th h3{ font-size:16px; font-weight:normal; color:#0487b7; text-align:center;}
+table#compareCursos th h3 span{ font-size:12px; font-weight:normal;}
+table#compareCursos th p{ font-size:12px; font-weight:normal; color:#b1c1c7; text-align:center;}
+p.msgCompararCursos{ font-size:14px; font-weight:normal; color:#0085b6; text-align:center; margin:20px 0px 0px 0px;}
+
+table#compareCursos p.yellow{ text-align:center;}
+table#compareCursos th p{ color:#6B8994; text-align:left; padding-top:2px; }
+table#compareCursos th select{ background-color:#fff; width:160px; font-size:12px; font-weight:normal; border:1px solid #e0eef4; color:#000; text-align:left; padding:2px;}
+table#compareCursos th ul{ font-size:12px; font-weight:normal; color:#b1c1c7; text-align:left;}
+table#compareCursos th ul li{ list-style:none; line-height:18px;}
+table#compareCursos th ul li a{ text-decoration: underline; color:#6B8994;}
+table#compareCursos th div { font-size:12px; font-weight:normal; color:#6B8994; text-align:left; line-height:18px; }
+table#compareCursos th div a{ text-decoration: underline; color:#6B8994; }
+
+table#tbCorpoDocente td{border-collapse:collapse;}
+table#tbCorpoDocente th{font-weight:bold; color:#0085B6;}
+table#tbCorpoDocente tr:hover{background-color:#A5B7BE;}
+/*table#tbCorpoDocente tr:hover td{color:#FFF;}*/
+
+/*FORMULÁRIOS*/
+label, input, select, textarea{ background:transparent; font-size:15px; font-weight:bold; border:0px;}
+textarea{overflow:auto;resize: none;}
+
+form#formContato{}
+
+form#formContato table{ width:810px; margin:40px 0px 0px 0px;}
+form#formContato table td{ vertical-align:middle;}
+form#formContato table td label, form#formContato caption{ margin:0px; padding:0px 10px 0px 0px; color:#0085b6; text-transform:uppercase;}
+form#formContato table td input{ width:547px; margin:0px; padding:0px; color:#8da7b1; }
+form#formContato table td select{ width:200px; margin:0px; padding:0px; color:#8da7b1; border:0px;}
+form#formContato table td label.check{ margin:0px; padding:0px 0px 0px 2px; color:#8da7b1; border:0px; font-size:12px;}
+form#formContato table td textarea{ width:527px; margin:0px; padding:20px; color:#8da7b1;}
+
+form#formContato table td.big{ width:610px; background-image:url(/imagens/form_input.jpg); background-repeat:no-repeat; background-position:left top;padding:14px 15px 16px 12px;}
+form#formContato table td.bigValido{ width:610px; background-image:url(/imagens/form_inputValido.jpg); background-repeat:no-repeat; background-position:left top; padding:14px 15px 16px 12px;}
+form#formContato table td.bigInvalido{ width:610px; background-image:url(/imagens/form_inputInvalido.jpg); background-repeat:no-repeat; background-position:left top;padding:14px 15px 16px 12px;}
+
+form#formContato table td div.med{width: 486px;background-image: url(/imagens/form_input.jpg);background-repeat: no-repeat;background-position: right top;padding: 14px 15px 16px 12px;}
+form#formContato table td div.medValido{width: 486px;background-image: url(/imagens/form_inputValido.jpg);background-repeat: no-repeat;background-position: right top;padding: 14px 15px 16px 12px;}
+form#formContato table td div.medInvalido{width: 486px;background-image: url(/imagens/form_inputInvalido.jpg);background-repeat: no-repeat;background-position: right top;padding: 14px 15px 16px 12px;}
+
+form#formContato table td div.med input,
+form#formContato table td div.medValido input,
+form#formContato table td div.medInvalido input {width: 460px;margin: 0px;padding: 0px;color: #8DA7B1;border: 0px;}
+
+form#formContato table td div.peq{width: 230px;background-image: url(/imagens/form_input.jpg);background-repeat: no-repeat;background-position: right top;padding: 14px 15px 16px 12px;}
+form#formContato table td div.peqValido{width: 230px;background-image: url(/imagens/form_inputValido.jpg);background-repeat: no-repeat;background-position: right top;padding: 14px 15px 16px 12px;}
+form#formContato table td div.peqInvalido{width: 230px;background-image: url(/imagens/form_inputInvalido.jpg);background-repeat: no-repeat;background-position: right top;padding: 14px 15px 16px 12px;}
+
+form#formContato table td div.peq input,
+form#formContato table td div.peqValido input,
+form#formContato table td div.peqInvalido input {width:200px;margin: 0px;padding: 0px;color: #8DA7B1;border: 0px;}
+
+form#formContato table td div.phone{float:left; width:230px; background-image:url(/imagens/form_input.jpg); background-repeat:no-repeat; background-position:right top;padding:14px 15px 16px 12px;}
+form#formContato table td div.telephone{float:left; width:230px; background-image:url(/imagens/form_input.jpg); background-repeat:no-repeat; background-position:right top;padding:14px 15px 16px 12px;}
+form#formContato table td .combo{ width:230px; background-image:url(/imagens/form_input.jpg); background-repeat:no-repeat; background-position:right top;padding:14px 15px 16px 12px;}
+form#formContato table td .comboValido{ width:230px; background-image:url(/imagens/form_inputValido.jpg); background-repeat:no-repeat; background-position:right top; padding:14px 15px 16px 12px;}
+form#formContato table td .comboInvalido{ width:230px; background-image:url(/imagens/form_inputInvalido.jpg); background-repeat:no-repeat; background-position:right top;padding:14px 15px 16px 12px;}
+
+form#formContato table td.textArea{width:610px; height:157px; background-image:url(/imagens/form_textarea.jpg); background-repeat:no-repeat; background-position:left top;padding:0px 15px 0px 12px; vertical-align:top;}
+form#formContato table td.textArea label{ margin:-40px 0px 0px 0px;}
+form#formContato table td.textAreaValido{width:610px; background-image:url(/imagens/form_textareaValido.jpg); background-repeat:no-repeat; background-position:left top; padding:14px 15px 16px 12px;}
+form#formContato table td.textAreaInvalido{width:610px; background-image:url(/imagens/form_textareaInvalido.jpg); background-repeat:no-repeat; background-position:left top;padding:14px 15px 16px 12px;}
+
+form#formContato table input[type="file"]{ width:500px;padding:0px 15px 0px 5px;}
+form#formContato table input[type="submit"]{ width:110px; height:46px; background-image:url(/imagens/bg_btForm.gif); text-align:center; color:#fff; margin:10px 20px 0px 0px; padding:0px; float:left; cursor:pointer;}
+
+form#formContato p{ font-size:13px; font-weight:bold; color:#c3592b; margin:20px 0px 0px 0px;}
+
+.avisoErro{display:none;}
+
+#frmBuscaNoticias{margin:-2px 0px 0px 430px; float:left;}
+#frmBuscaNoticias input{border:1px solid; border-color:#0085B6; color:#0085B6 !important; font-size:10px; padding:7px;}
+#frmBuscaNoticias input[name="busca"]{height:28px; width:250px;}
+#frmBuscaNoticias input[type="submit"]{cursor:pointer; margin-top:3px;}
+
+/*TÍTULOS*/
+#leftList h1{ font-size:12px; margin:0px 0px 17px 0px; text-transform:uppercase; font-weight:bold; color:#7a8387;}
+#menuExpansivo ul.itemSite h1{ font-size:14px; margin:0px 0px 17px 0px; text-transform:uppercase; font-weight:bold; color:#0e88b5;}
+#footer div.container div.colunaFoot div.itemSite h1{ font-size:14px; margin:0px 0px 17px 0px; text-transform:uppercase; font-weight:bold; color:#7a8387;}
+
+div.midiasSociais h2{ font-size:12px; text-transform:uppercase; color:#85c3da !important; padding:3px 10px 0px 45px; float:left; position:relative;}
+
+.textNoticiasHome h2{ font-size:16px; color:#0085b6; cursor:pointer;}
+.textNoticiasHome h4{ font-size:11px; color:#f7d556; margin:0px 0px 10px 0px; text-transform:uppercase;}
+.textNoticiasHome h4 div{padding:0 1px;}
+
+#blocoPrincipal h2, div#twitter h2{ font-size:18px; font-weight:normal; text-transform:uppercase; margin:10px 0px 25px 0px;*margin:20px 0px 25px 0px; color:#666;}
+	#nesHome h3 a{ font-size:14px; font-weight:bold; text-decoration:none; margin:0px; padding:0px; color:#0085b6;}
+	#nesHome h3 span{ font-size:10px; color:#7a8387;}
+
+#contatoFotter h2{ font-size:13px; text-align:right; margin:25px 0px; color:#7a8387; font-weight:bold; text-transform:uppercase;}
+
+div.navLateral h2, div.descCursos div.navLateral h2{ font-size:14px; font-weight:bold; text-transform: uppercase; color:#0487b7; margin:20px 0px; }
+div.navLateral h3, div.descCursos div.navLateral h3{ font-size:12px; font-weight:bold; color:#7a8387; margin:0px 0px 5px 0px;}
+div.navLateral h4, div.descCursos div.navLateral h4{ font-size:13px; font-weight:bold; color:#0487b7; margin:5px 0px; }
+
+div.cabecalhoMateria h1{ font-size:28px; text-transform:uppercase; color:#666;}
+
+div.conteudoPrincipal h2{ font-size:14px; font-weight:bold; text-transform: uppercase; color:#ccc; margin:20px 0px;}
+div.conteudoPrincipal h3{ font-size:14px; font-weight:bold; color:#000; margin:20px 0px;}
+div.conteudoPrincipal h3 a{ font-size:14px; font-weight:bold; color:#0487b7;}
+div.tplSimples div.cabecalhoMateria h1{ font-size:28px; text-transform:uppercase; color:#8da7b1;}
+
+div.amplicarAp h2{ margin:7px 0px 0px 20px; padding:0px; float:left;}
+div.amplicarAp a{ font-size:12px;color:#0487b7; margin:0px; padding:8px 40px 0px 0px; text-decoration:none; float:right;}
+
+h2#sucesso{color:#0085B6; padding-left:20px;}
+
+/*PARÁGRAFO*/
+p{ line-height:1.5;}
+#login p{ margin:0px; padding:0px; font-size:11px; float:left;}
+#copyRight p{ font-size:13px; padding:30px 0px 0px 0px;}
+#telTop p{ font-size:21px; line-height:17px;}
+#telTop p span{ font-size:11px;}
+
+div.navLateral p, div.descCursos div.navLatera p{ font-size:16px; font-weight:bold; color:#7a8387; margin:10px 0px; padding:0px 20px 0px 0px; line-height:18px;}
+div.navLateral p span, div.navLateral p span a, div.descCursos div.navLateral p span, div.descCursos div.navLateral p span a { font-size:12px; color:#7a8387; margin:10px 0px; padding:0px 0px 0px 0px; line-height:18px; text-decoration:none;}
+
+div.navLateral div.funcionamentoBibliotecas p{ font-size:12px; font-weight:bold;}
+
+.textNoticiasHome p{ font-size:11px; color:#7a8387;}
+#blocoPrincipal span{ font-weight:bold; color:#ecb900;}
+#nesHome ul p{ font-size:15px; font-weight:bold;}
+
+div.conteudoPrincipal p{ color:#7a8387 !important;}
+div.conteudoPrincipal p span{ color:#0788b8;}
+
+div.chamadasLaterais p{ font-size:12px; font-weight:normal;}
+div.chamadasLaterais p span{ color:#0788b8;}
+
+p.yellow{ font-size:24px !important; color:#ecb900 !important; margin:0px !important; padding:0px !important;}
+p.yellow span{ font-size:12px !important; font-weight:normal !important; color:#ecb900 !important;}
+
+/*SPAN*/
+span.spanEmail,span.spanEmail a{ font-size:12px; font-weight:bold; color:#0085b6;}
+
+/*IMAGENS*/
+img.imprime{ margin:0px 0px 0px 10px;} 
+div.navLateral img{ float:left; margin:0px 20px 0px 0px;}
+
+
+
+div.gradeSem h3{ width:30px; font-size:16px; font-weight:bold; color:#0487b7; text-transform:uppercase; text-align:center; vertical-align:middle !important; float:left;}
+
+
+
+div.gradeSem ul{ width:250px; font-weight:normal; color:# b1c1c7; text-align:left; float:left;border-left:1px solid #e0eef4 !important; padding:10px 0px 10px 10px;}
+div.gradeSem ul li{ list-style:none; font-size:12px !important; border-bottom:1px dashed #e0eef4 !important; margin:0px; padding:0px;}
+div.gradeSem ul li a{ text-decoration: underline; color:#b1c1c7;}
+
+.defaultInsertInfo{color:#FFF !important; font-size:13px;}

@@ -1,0 +1,27 @@
+* html #menu {
+	width: expression(document.body.clientWidth > 1000? "1000px" : "auto");
+	
+}
+* html #geral {
+	width: expression(document.body.clientWidth > 1000? "1000px" : "auto");
+	
+}
+* html #logo {
+	width: expression(document.body.clientWidth > 1000? "1000px" : "auto");
+	
+}
+* html #desc {
+	width: expression(document.body.clientWidth > 1000? "1000px" : "auto");
+	
+}
+#conteudo {
+	min-height: 530px;
+	height: auto !important;
+	height: 530px;
+	
+}
+
+#onde {
+	box-shadow: 0px 1px 10px 0px #888;
+	behavior: url(ie-css3.htc);
+}

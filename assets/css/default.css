@@ -1,0 +1,9 @@
+.g_12, .g_10, .g_9, .g_8, .g_6, .g_4, .g_3, .g_2 {
+		float: left;
+		border: 10px solid rgba(0,0,0,0);
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		box-sizing: border-box;
+		position: relative;
+	}

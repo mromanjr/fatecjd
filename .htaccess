@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond $1 !^(index\.php|images|robots\.txt|assets|uploads)
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+#RewriteCond %{HTTP_HOST} ^dominio.com
+#RewriteRule ^ http://www.dominio.com%{REQUEST_URI} [L,R=301]
